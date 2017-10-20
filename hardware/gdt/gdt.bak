@@ -203,7 +203,7 @@ U 1 1 59E5943B
 P 8250 1550
 F 0 "Q1" V 8578 1550 50  0000 C CNN
 F 1 "Q_NPN_BEC" V 8487 1550 50  0000 C CNN
-F 2 "cuzdaori/KiCad.pretty:SOT-23_Handsoldering" H 8450 1650 50  0001 C CNN
+F 2 "KiCad/TO_SOT_Packages_SMD.pretty:SOT-23_Handsoldering" H 8450 1650 50  0001 C CNN
 F 3 "" H 8250 1550 50  0001 C CNN
 	1    8250 1550
 	0    -1   -1   0   
@@ -214,7 +214,7 @@ U 1 1 59E59498
 P 9150 1550
 F 0 "Q2" V 9478 1550 50  0000 C CNN
 F 1 "Q_NPN_BEC" V 9387 1550 50  0000 C CNN
-F 2 "cuzdaori/KiCad.pretty:SOT-23_Handsoldering" H 9350 1650 50  0001 C CNN
+F 2 "KiCad/TO_SOT_Packages_SMD.pretty:SOT-23_Handsoldering" H 9350 1650 50  0001 C CNN
 F 3 "" H 9150 1550 50  0001 C CNN
 	1    9150 1550
 	0    1    -1   0   
@@ -760,12 +760,12 @@ Wire Wire Line
 Wire Wire Line
 	7950 4750 7350 4750
 $Comp
-L Q_NMOS_GDS Q?
+L Q_NMOS_GDS Q3
 U 1 1 59E6248B
 P 9500 5400
-F 0 "Q?" H 9705 5354 50  0000 L CNN
+F 0 "Q3" H 9705 5354 50  0000 L CNN
 F 1 "Q_NMOS_GDS" H 9705 5445 50  0000 L CNN
-F 2 "" H 9700 5500 50  0001 C CNN
+F 2 "cpavlina/kicad-pcblib/pth-semi.pretty:TO-220" H 9700 5500 50  0001 C CNN
 F 3 "" H 9500 5400 50  0001 C CNN
 	1    9500 5400
 	1    0    0    1   
@@ -784,4 +784,28 @@ Wire Wire Line
 	8050 5400 8050 5150
 Wire Wire Line
 	8050 5150 7350 5150
+Text GLabel 5100 4550 1    60   BiDi ~ 0
+REST
+$Comp
+L R R?
+U 1 1 59E9A93D
+P 8050 5550
+F 0 "R?" V 7843 5550 50  0000 C CNN
+F 1 "10k" V 7934 5550 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 7980 5550 50  0001 C CNN
+F 3 "" H 8050 5550 50  0001 C CNN
+	1    8050 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 59E9A9C5
+P 8050 5700
+F 0 "#PWR?" H 8050 5450 50  0001 C CNN
+F 1 "GND" H 8055 5527 50  0000 C CNN
+F 2 "" H 8050 5700 50  0001 C CNN
+F 3 "" H 8050 5700 50  0001 C CNN
+	1    8050 5700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
