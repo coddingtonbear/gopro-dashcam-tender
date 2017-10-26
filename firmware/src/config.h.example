@@ -1,0 +1,5 @@
+#define HOME_WIFI_SSID ""
+#define HOME_WIFI_PWD ""
+
+#define GOPRO_WIFI_SSID ""
+#define GOPRO_WIFI_PWD ""

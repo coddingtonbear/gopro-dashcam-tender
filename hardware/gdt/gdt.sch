@@ -150,12 +150,12 @@ $EndComp
 $Comp
 L +5V #PWR04
 U 1 1 59E588B7
-P 9600 5700
-F 0 "#PWR04" H 9600 5550 50  0001 C CNN
-F 1 "+5V" H 9615 5873 50  0000 C CNN
-F 2 "" H 9600 5700 50  0001 C CNN
-F 3 "" H 9600 5700 50  0001 C CNN
-	1    9600 5700
+P 10050 4700
+F 0 "#PWR04" H 10050 4550 50  0001 C CNN
+F 1 "+5V" H 10065 4873 50  0000 C CNN
+F 2 "" H 10050 4700 50  0001 C CNN
+F 3 "" H 10050 4700 50  0001 C CNN
+	1    10050 4700
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -586,46 +586,7 @@ Wire Wire Line
 	900  2800 900  2500
 Wire Wire Line
 	900  2500 1050 2500
-$Comp
-L R R6
-U 1 1 59E5DACD
-P 7050 4100
-F 0 "R6" V 6843 4100 50  0000 C CNN
-F 1 "JMP_D-" V 6934 4100 50  0000 C CNN
-F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 6980 4100 50  0001 C CNN
-F 3 "" H 7050 4100 50  0001 C CNN
-	1    7050 4100
-	0    1    1    0   
-$EndComp
-$Comp
-L R R7
-U 1 1 59E5DBD0
-P 7050 4300
-F 0 "R7" V 6843 4300 50  0000 C CNN
-F 1 "JMP_D+" V 6934 4300 50  0000 C CNN
-F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 6980 4300 50  0001 C CNN
-F 3 "" H 7050 4300 50  0001 C CNN
-	1    7050 4300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5300 4650 5450 4650
-Wire Wire Line
-	5300 4100 5300 4650
-Wire Wire Line
-	5300 4300 6900 4300
-Wire Wire Line
-	6900 4100 5300 4100
-Connection ~ 5300 4300
-Wire Wire Line
-	7200 4300 8200 4300
-Wire Wire Line
-	8200 4300 8200 4500
 Connection ~ 8200 4500
-Wire Wire Line
-	7200 4100 8300 4100
-Wire Wire Line
-	8300 4100 8300 4400
 Connection ~ 8300 4400
 $Comp
 L CP C6
@@ -759,27 +720,6 @@ Wire Wire Line
 	7950 4500 7950 4750
 Wire Wire Line
 	7950 4750 7350 4750
-$Comp
-L Q_NMOS_GDS Q3
-U 1 1 59E6248B
-P 9500 5400
-F 0 "Q3" H 9705 5354 50  0000 L CNN
-F 1 "Q_NMOS_GDS" H 9705 5445 50  0000 L CNN
-F 2 "cpavlina/kicad-pcblib/pth-semi.pretty:TO-220" H 9700 5500 50  0001 C CNN
-F 3 "" H 9500 5400 50  0001 C CNN
-	1    9500 5400
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	9600 5700 9600 5600
-Wire Wire Line
-	9600 5200 9600 4950
-Wire Wire Line
-	9600 4950 10050 4950
-Wire Wire Line
-	10050 4950 10050 4700
-Wire Wire Line
-	9300 5400 8050 5400
 Wire Wire Line
 	8050 5400 8050 5150
 Wire Wire Line
@@ -807,5 +747,44 @@ F 2 "" H 8050 5700 50  0001 C CNN
 F 3 "" H 8050 5700 50  0001 C CNN
 	1    8050 5700
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4100 8300 4400
+Wire Wire Line
+	8200 4300 8200 4500
+Wire Wire Line
+	7200 4300 8200 4300
+Wire Wire Line
+	7200 4100 8300 4100
+Wire Wire Line
+	5300 4650 5450 4650
+Wire Wire Line
+	6900 4100 5300 4100
+Connection ~ 5300 4300
+Wire Wire Line
+	5300 4100 5300 4650
+Wire Wire Line
+	5300 4300 6900 4300
+$Comp
+L R R7
+U 1 1 59E5DBD0
+P 7050 4300
+F 0 "R7" V 6843 4300 50  0000 C CNN
+F 1 "JMP_D+" V 6934 4300 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 6980 4300 50  0001 C CNN
+F 3 "" H 7050 4300 50  0001 C CNN
+	1    7050 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R6
+U 1 1 59E5DACD
+P 7050 4100
+F 0 "R6" V 6843 4100 50  0000 C CNN
+F 1 "JMP_D-" V 6934 4100 50  0000 C CNN
+F 2 "coddingtonbear/coddingtonbear.pretty:0805_Milling" V 6980 4100 50  0001 C CNN
+F 3 "" H 7050 4100 50  0001 C CNN
+	1    7050 4100
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
