@@ -13,7 +13,7 @@ In order of decreasing expense:
 * 1x ESP-12F: These can be obtained for roughly $2 on AliExpress.  Other similar packages of the ESP8266 wifi module, or _maybe_ even the ESP-01 module should work with minimal modifications to the layout and schematic.
 * 1x CH340G: ~$0.50 on AliExpress.
 * 1x SOT-223 3.3V Voltage Regulator
-* 2x SOT-23 NMOS Transistors for the UART->ESP8266 reset circuit.  Note that there are alternative reset circuits.  See below for details.
+* 2x SOT-23 NPN Transistors for the UART->ESP8266 reset circuit.  Note that there are alternative reset circuits.  See below for details.
 * 1x HC-49 12MHz crystal
 * Miscellaneous passives.
 
